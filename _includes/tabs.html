@@ -1,0 +1,42 @@
+<!-- Jekyll 탭 UI include 파일 -->
+<div class="tabs">
+  <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">탭 1</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab2')">탭 2</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab3')">탭 3</button>
+</div>
+<div id="Tab1" class="tabcontent">
+  <h3>탭 1</h3>
+  <p>탭 1의 내용입니다.</p>
+</div>
+<div id="Tab2" class="tabcontent" style="display:none">
+  <h3>탭 2</h3>
+  <p>탭 2의 내용입니다.</p>
+</div>
+<div id="Tab3" class="tabcontent" style="display:none">
+  <h3>탭 3</h3>
+  <p>탭 3의 내용입니다.</p>
+</div>
+<style>
+.tabs { overflow: hidden; border-bottom: 1px solid #ccc; }
+.tablinks { background: #f1f1f1; border: none; outline: none; cursor: pointer; padding: 10px 20px; transition: 0.3s; }
+.tablinks.active { background: #ccc; }
+.tabcontent { display: none; padding: 20px 0; }
+</style>
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("defaultOpen").click();
+});
+</script>

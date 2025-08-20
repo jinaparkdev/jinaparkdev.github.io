@@ -1,0 +1,256 @@
+<!-- 여행 계획 탭 UI: trip.yml 데이터 기반으로 동적 생성 -->
+<div class="mui-tabs-wrapper">
+    <div class="mui-title">여행계획</div>
+    <div class="mui-tabs">
+        {% for day in site.data.trip %}
+        <button class="mui-tablinks" onclick="openTab(event, 'tab-{{ forloop.index0 }}')" {% if forloop.first
+                %}id="defaultOpen" {% endif %}>{{ day.date }}<br><span class="mui-tablabel">{{ day.title }}</span>
+        </button>
+        {% endfor %}
+        <span class="mui-tab-indicator" id="muiTabIndicator"></span>
+    </div>
+
+    {% for day in site.data.trip %}
+    <div id="tab-{{ forloop.index0 }}" class="mui-tabcontent" style="display:none">
+        <div class="mui-card">
+            <h3>{{ day.date }} <span class="mui-tablabel">{{ day.title }}</span></h3>
+            <ul class="mui-plan-list">
+                {% for plan in day.plans %}
+                <li>
+                    <div class="mui-plan-time">{{ plan.time }}</div>
+                    <div class="mui-plan-desc">{{ plan.desc }}</div>
+                    {% if plan.img %}
+                    <img src="{{ plan.img }}" alt="{{ plan.desc }}" class="mui-plan-img">
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+    body {
+        background: #f4f6fa;
+    }
+
+    .mui-tabs-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: #f4f6fa;
+        padding-top: 40px;
+        box-sizing: border-box;
+    }
+
+    .mui-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 24px;
+        letter-spacing: -1px;
+        text-align: center;
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .mui-tabs, .mui-card {
+        max-width: 480px;
+        width: 100%;
+        min-width: 280px;
+        box-sizing: border-box;
+    }
+
+    .mui-tabs {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        position: relative;
+        overflow-x: auto;
+        background: #fff;
+        border-radius: 12px 12px 0 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        border-bottom: 1.5px solid #e0e0e0;
+        padding: 0 4px;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .mui-tablinks {
+        flex: 0 0 auto;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 28px 12px 28px;
+        margin: 0 2px;
+        font-size: 1.08rem;
+        font-weight: 500;
+        color: #555;
+        border-radius: 12px 12px 0 0;
+        transition: background 0.2s, color 0.2s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mui-tablinks:hover {
+        background: #f5f5f5;
+        color: #1976d2;
+    }
+
+    .mui-tablinks.active {
+        color: #1976d2;
+        font-weight: 600;
+    }
+
+    .mui-tab-indicator {
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        background: #1976d2;
+        border-radius: 2px 2px 0 0;
+        transition: left 0.3s, width 0.3s;
+        z-index: 2;
+    }
+
+    .mui-tablabel {
+        display: block;
+        font-size: 0.92em;
+        color: #888;
+        font-weight: 400;
+    }
+
+    .mui-tabcontent {
+        display: none;
+        width: 100%;
+    }
+
+    .mui-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        padding: 36px 28px 28px 28px; /* 좌우 패딩을 28px로 늘리고, 상단도 여유있게 */
+        margin: 18px 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mui-card h3 {
+        margin-top: 0;
+        margin-bottom: 18px;
+        font-size: 1.25rem;
+        color: #1976d2;
+        font-weight: 600;
+    }
+
+    .mui-plan-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mui-plan-list li {
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #f8fafc;
+        border-radius: 10px;
+        padding: 14px 12px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .mui-plan-time {
+        font-size: 1.05em;
+        font-weight: 500;
+        color: #1976d2;
+        margin-bottom: 4px;
+    }
+
+    .mui-plan-desc {
+        font-size: 1.08em;
+        color: #333;
+        margin-bottom: 6px;
+    }
+
+    .mui-plan-img {
+        max-width: 100%;
+        max-height: 180px;
+        border-radius: 8px;
+        margin-top: 4px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    @media (max-width: 600px) {
+        .mui-title {
+            font-size: 1.3rem;
+            max-width: 98vw;
+        }
+
+        .mui-tabs, .mui-card {
+            max-width: 98vw;
+            min-width: 0;
+        }
+
+        .mui-tabs {
+            border-radius: 0;
+            padding: 0 1px;
+        }
+
+        .mui-tablinks {
+            padding: 12px 10px 10px 10px;
+            font-size: 0.98rem;
+        }
+
+        .mui-card {
+            padding: 18px 12px 12px 12px;
+        }
+    }
+
+    body, .mui-tabs, .mui-tablinks, .mui-card, .mui-plan-list, .mui-plan-list li, .mui-plan-time, .mui-plan-desc, .mui-tablabel, .mui-tabcontent {
+        font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    }
+</style>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("mui-tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("mui-tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        moveMuiTabIndicator();
+    }
+
+    function moveMuiTabIndicator() {
+        var active = document.querySelector('.mui-tablinks.active');
+        var indicator = document.getElementById('muiTabIndicator');
+        if (active && indicator) {
+            var rect = active.getBoundingClientRect();
+            var parentRect = active.parentElement.getBoundingClientRect();
+            indicator.style.left = (rect.left - parentRect.left + active.parentElement.scrollLeft) + 'px';
+            indicator.style.width = rect.width + 'px';
+            indicator.style.display = 'block';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var defaultBtn = document.getElementById("defaultOpen");
+        if (defaultBtn) defaultBtn.click();
+        moveMuiTabIndicator();
+        // 탭바 스크롤 시 indicator 위치 보정
+        var tabs = document.querySelector('.mui-tabs');
+        if (tabs) {
+            tabs.addEventListener('scroll', moveMuiTabIndicator);
+        }
+    });
+    window.addEventListener('resize', moveMuiTabIndicator);
+</script>

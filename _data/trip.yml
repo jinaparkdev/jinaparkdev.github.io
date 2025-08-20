@@ -1,0 +1,36 @@
+- date: 2025-11-13
+  title: 첫째 날
+  plans:
+    - time: "09:00"
+      desc: "호텔 체크인"
+      img: "/assets/images/hotel.jpg"
+    - time: "12:00"
+      desc: "현지 맛집 점심"
+      img: "/assets/images/lunch.jpg"
+- date: 2025-11-14
+  title: 둘째 날
+  plans:
+    - time: "10:00"
+      desc: "박물관 방문"
+      img: "/assets/images/museum.jpg"
+    - time: "15:00"
+      desc: "카페에서 휴식"
+      img: "/assets/images/cafe.jpg"
+- date: 2025-11-15
+  title: 셋째 날
+  plans:
+    - time: "10:00"
+      desc: "박물관 방문"
+      img: "/assets/images/museum.jpg"
+    - time: "15:00"
+      desc: "카페에서 휴식"
+      img: "/assets/images/cafe.jpg"
+- date: 2025-11-16
+  title: 마지막 날
+  plans:
+    - time: "10:00"
+      desc: "박물관 방문"
+      img: "/assets/images/museum.jpg"
+    - time: "15:00"
+      desc: "카페에서 휴식"
+      img: "/assets/images/cafe.jpg"
