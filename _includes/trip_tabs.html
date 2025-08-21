@@ -23,6 +23,18 @@
                     <img src="{{ plan.img }}" alt="{{ plan.title }}" class="mui-plan-img">
                     {% endif %}
                     <div class="mui-plan-desc">{{ plan.desc | newline_to_br }}</div>
+                    {% if plan.meals %}
+                    <div class="mui-meal-list">
+                        {% for meal in plan.meals %}
+                        <div class="mui-meal-info">
+                            {% if meal.img %}
+                            <img src="{{ meal.img }}" alt="식사 사진" class="mui-meal-img">
+                            {% endif %}
+                            <div class="mui-meal-desc">{{ meal.desc | newline_to_br | markdownify }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </li>
                 {% unless forloop.last %}
                 <div class="transport-info-side">
@@ -223,6 +235,55 @@
     .transport-icon {
         font-size: 1.1em;
         margin-right: 2px;
+    }
+
+    .mui-meal-list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mui-meal-info {
+        display: flex;
+        align-items: center; /* 이미지와 설명을 세로 중앙 정렬 */
+        background: #f6f8fc;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        padding: 10px 12px;
+        gap: 12px;
+    }
+
+    .mui-meal-img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        margin-right: 6px;
+    }
+
+    .mui-meal-desc {
+        font-size: 1em;
+        color: #4a4a4a;
+        line-height: 1.5;
+        word-break: keep-all;
+        margin-top: 2px;
+    }
+
+    .mui-meal-desc a {
+        color: #1976d2;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1.5px solid #90caf9;
+        transition: background 0.2s, border-bottom 0.2s;
+        padding: 1px 2px;
+        border-radius: 4px;
+    }
+    .mui-meal-desc a:hover, .mui-meal-desc a:focus {
+        background: #e3f2fd;
+        border-bottom: 2px solid #1976d2;
+        text-decoration: none;
     }
 
     @media (max-width: 600px) {

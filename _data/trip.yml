@@ -13,12 +13,20 @@
       푸둥의 현대적인 마천루와 동방명주가 한눈에 보이는 명소"
       img: "/assets/images/beiwaitan.jpeg"
       transport: "차량(10분)"
+      meals:
+        - img: "/assets/images/diandoude.JPG"
+          desc: "점심:\n점도덕에서 홍미창펀과 상하이의 대표음식 샤오롱 바오를 맛보세요\n
+          [점도덕 미리보기](https://m.blog.naver.com/minglog_0215/223427272931)"
     - time: "16:00"
       title: "록번드"
       desc: "와이탄 북쪽의 숨겨진 유럽\n
       1920년대 유럽식 건물이 즐비한 거리로, 고풍스러운 분위기를 느낄 수 있는 곳입니다.\n
       감성적인 카페와 레스토랑이 많아 산책과 사진 촬영에 좋습니다."
       img: "/assets/images/rockbund.jpeg"
+      meals:
+        - img: "/assets/images/diandoude.JPG"
+          desc: "후식:\n점도덕에서 홍미창펀과 상하이의 대표음식 샤오롱 바오를 맛보세요\n
+          [점도덕 미리보기](https://m.blog.naver.com/minglog_0215/223427272931)"
     - time: "17:00"
       title: "난징동루"
       desc: "상하이 최대의 쇼핑 거리\n
@@ -46,21 +54,21 @@
       desc: "쑤저우의 옛 운치가 깃든 역사거리\n
       고즈넉한 운하 옆으로 전통 가옥, 운하, 돌다리가 어우러져 아름다운 수향마을 풍경을 만끽할 수 있습니다.\n
       수공예품 가게, 전통찻집, 아기자기한 카페들이 많아 여유로운 산책과 기념품 쇼핑을 즐기기 좋습니다."
-      img: "/assets/images/pingjianglu.jpeg"
+      img: "/assets/images/pingjianglu.jpg"
     - time: "14:00"
       title: "쥐정위엔(졸정원)"
       desc: "중국 4대 명원\n
       넓은 연못과 정교하게 꾸며진 정자, 아름다운 정원 풍경이 어우러져 있습니다.\n
       중국 전통 정원의 정수를 느낄 수 있는 곳으로,\n
       여유롭게 산책하며 고풍스러운 아름다움을 만끽하기 좋습니다."
-      img: "/assets/images/zhuojingyuan.jpeg"
+      img: "/assets/images/juzhengyuan.jpg"
       transport: "차량(15분)"
     - time: "16:00"
       title: "샨탕지에(산탕가)"
       desc: "쑤저우의 대표적인 운하 거리\n
       고풍스러운 건물과 돌다리가 늘어선 운하를 따라 걷거나, 배를 타고 여유로운 시간을 보낼 수 있습니다.\n
       밤에는 홍등이 켜져 더욱 아름다운 야경을 즐길 수 있어 운치 있는 산책과 뱃놀이를 즐기기 좋습니다."
-      img: "/assets/images/shantangjie.jpeg"
+      img: "/assets/images/shantangjie.jpg"
       transport: "차량(2시간)"
     - time: "19:00"
       title: "상하이 숙소 복귀"
@@ -74,7 +82,7 @@
       title: "신톈디(신천지)"
       desc: "과거와 현재가 공존하는 핫플레이스\n
       과거 프랑스 조계 시대의 전통 석고문(石庫門) 주택을 개조한 세련된 레스토랑, 카페가 많아 고급스러운 분위기에서 식사나 커피를 즐기기 좋은 곳입니다."
-      img: "/assets/images/xintiandi.jpeg"
+      img: "/assets/images/xintiandi.jpg"
     - time: "13:00"
       title: "대한민국 임시정부"
       desc: "대한민국의 역사를 담고 있는 의미 깊은 장소\n
@@ -85,27 +93,27 @@
       desc: "옛 상하이 귀족들의 저택이 모인 곳\n
       1920년대에 지어진 서양식 정원 주택들이 아름답게 보존되어 있습니다.\n
       레스토랑, 카페, 서점 등이 들어서 있어 우아하고 한적한 분위기 속에서 여유를 즐기기 좋은 장소입니다."
-      img: "/assets/images/sinan.jpeg"
+      img: "/assets/images/sinangongguan.jpg"
     - time: "14:00"
       title: "티엔즈팡"
       desc: "골목길에 숨겨진 예술가 거리\n
       미로처럼 좁은 골목길에 아기자기한 공방, 카페, 기념품 가게들이 모여 있습니다.\n
       빈티지한 매력 속에서 독특한 분위기를 즐기기 좋은 곳입니다."
-      img: "/assets/images/tianzifang.jpeg"
+      img: "/assets/images/tianzifang.jpg"
       transport: "택시(15분)"
     - time: "15:00"
       title: "위위엔(예원)"
       desc: "고즈넉한 명나라 시대 정원\n
       아름다운 연못과 정자, 복잡한 회랑이 조화를 이루며 고풍스러운 정취를 느낄 수 있습니다.\n
       정원 주변에는 전통 시장인 예원 상가가 있어 다양한 길거리 음식과 기념품을 즐기기 좋습니다."
-      img: "/assets/images/yuyuan.jpeg"
+      img: "/assets/images/yuyuan.jpg"
       transport: "택시(20분)"
     - time: "17:30"
       title: "찡안스(정안사)"
       desc: "도심 한복판에 위치한 황금빛 불교 사원\n
       화려하고 웅장한 외관이 특징으로, 현대적인 고층 빌딩 숲과 어우러져 독특한 분위기를 자아냅니다\n
       도심 속에서 평온함을 느끼며 사원 건축의 아름다움을 감상하기 좋은 곳입니다."
-      img: "/assets/images/jingan.jpeg"
+      img: "/assets/images/jingan.jpg"
 - date: 2025-11-16
   title: 귀국
   plans:
