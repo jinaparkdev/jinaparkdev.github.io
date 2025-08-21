@@ -13,16 +13,16 @@
     <div class="mui-title">일정표</div>
     <div class="mui-tabs">
         
-        <button class="mui-tablinks" onclick="openTab(event, 'tab-0')" id="defaultOpen">2025-11-13<br /><span class="mui-tablabel">첫째 날</span>
+        <button class="mui-tablinks" onclick="openTab(event, 'tab-0')" id="defaultOpen">2025-11-13<br /><span class="mui-tablabel">상하이 대표 관광지</span>
         </button>
         
-        <button class="mui-tablinks" onclick="openTab(event, 'tab-1')">2025-11-14<br /><span class="mui-tablabel">둘째 날</span>
+        <button class="mui-tablinks" onclick="openTab(event, 'tab-1')">2025-11-14<br /><span class="mui-tablabel">상하이 근교 쑤저우</span>
         </button>
         
-        <button class="mui-tablinks" onclick="openTab(event, 'tab-2')">2025-11-15<br /><span class="mui-tablabel">셋째 날</span>
+        <button class="mui-tablinks" onclick="openTab(event, 'tab-2')">2025-11-15<br /><span class="mui-tablabel">상하이 현재와 과거</span>
         </button>
         
-        <button class="mui-tablinks" onclick="openTab(event, 'tab-3')">2025-11-16<br /><span class="mui-tablabel">마지막 날</span>
+        <button class="mui-tablinks" onclick="openTab(event, 'tab-3')">2025-11-16<br /><span class="mui-tablabel">귀국</span>
         </button>
         
         <span class="mui-tab-indicator" id="muiTabIndicator"></span>
@@ -31,7 +31,7 @@
     
     <div id="tab-0" class="mui-tabcontent" style="display:none">
         <div class="mui-card">
-            <h3>2025-11-13 <span class="mui-tablabel">첫째 날</span></h3>
+            <h3>2025-11-13 <span class="mui-tablabel">상하이 대표 관광지</span></h3>
             <ul class="mui-plan-list">
                 
                 <li class="mui-plan-item">
@@ -145,15 +145,31 @@
     
     <div id="tab-1" class="mui-tabcontent" style="display:none">
         <div class="mui-card">
-            <h3>2025-11-14 <span class="mui-tablabel">둘째 날</span></h3>
+            <h3>2025-11-14 <span class="mui-tablabel">상하이 근교 쑤저우</span></h3>
             <ul class="mui-plan-list">
                 
                 <li class="mui-plan-item">
                     <div class="mui-plan-time">10:00</div>
-                    <div class="mui-plan-title">박물관 방문</div>
+                    <div class="mui-plan-title">숙소 출발</div>
                     <div class="mui-plan-desc"></div>
                     
-                    <img src="/assets/images/museum.jpg" alt="" class="mui-plan-img" />
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(2시간)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">12:00</div>
+                    <div class="mui-plan-title">핑장루(평강로)</div>
+                    <div class="mui-plan-desc">쑤저우의 전통적인 거리로, 고풍스러운 건축물과 상점들이 늘어서 있습니다.</div>
+                    
+                    <img src="/assets/images/pingjianglu.jpeg" alt="쑤저우의 전통적인 거리로, 고풍스러운 건축물과 상점들이 늘어서 있습니다." class="mui-plan-img" />
                     
                 </li>
                 
@@ -164,11 +180,45 @@
                 
                 
                 <li class="mui-plan-item">
-                    <div class="mui-plan-time">15:00</div>
-                    <div class="mui-plan-title">카페에서 휴식</div>
-                    <div class="mui-plan-desc"></div>
+                    <div class="mui-plan-time">14:00</div>
+                    <div class="mui-plan-title">쥐정위엔(졸정원)</div>
+                    <div class="mui-plan-desc">쑤저우의 대표적인 정원으로, 중국 전통 정원의 아름다움을 느낄 수 있는 곳입니다.</div>
                     
-                    <img src="/assets/images/cafe.jpg" alt="" class="mui-plan-img" />
+                    <img src="/assets/images/zhuojingyuan.jpeg" alt="쑤저우의 대표적인 정원으로, 중국 전통 정원의 아름다움을 느낄 수 있는 곳입니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(15분)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">16:00</div>
+                    <div class="mui-plan-title">샨탕지에(산탕가)</div>
+                    <div class="mui-plan-desc">쑤저우의 전통적인 수로 거리로, 운하를 따라 다양한 상점과 음식점이 있습니다.</div>
+                    
+                    <img src="/assets/images/shantangjie.jpeg" alt="쑤저우의 전통적인 수로 거리로, 운하를 따라 다양한 상점과 음식점이 있습니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(2시간)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">19:00</div>
+                    <div class="mui-plan-title">상하이 숙소 복귀</div>
+                    <div class="mui-plan-desc"></div>
                     
                 </li>
                 
@@ -179,15 +229,74 @@
     
     <div id="tab-2" class="mui-tabcontent" style="display:none">
         <div class="mui-card">
-            <h3>2025-11-15 <span class="mui-tablabel">셋째 날</span></h3>
+            <h3>2025-11-15 <span class="mui-tablabel">상하이 현재와 과거</span></h3>
             <ul class="mui-plan-list">
                 
                 <li class="mui-plan-item">
-                    <div class="mui-plan-time">10:00</div>
-                    <div class="mui-plan-title">박물관 방문</div>
+                    <div class="mui-plan-time">10:30</div>
+                    <div class="mui-plan-title">숙소 출발</div>
                     <div class="mui-plan-desc"></div>
                     
-                    <img src="/assets/images/museum.jpg" alt="" class="mui-plan-img" />
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    택시(15분)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">11:00</div>
+                    <div class="mui-plan-title">신톈디(신천지)</div>
+                    <div class="mui-plan-desc">상하이의 대표적인 문화 거리로, 프랑스의 건축 양식과 현대적인 상점들이 어우러져 있습니다.</div>
+                    
+                    <img src="/assets/images/xintiandi.jpeg" alt="상하이의 대표적인 문화 거리로, 프랑스의 건축 양식과 현대적인 상점들이 어우러져 있습니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">13:00</div>
+                    <div class="mui-plan-title">대한민국 임시정부</div>
+                    <div class="mui-plan-desc">상하이 프랑스 조계지에 위치한 대한민국 임시정부의 역사적인 장소입니다.</div>
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">13:30</div>
+                    <div class="mui-plan-title">쓰난공관(사남공관)</div>
+                    <div class="mui-plan-desc">상하이 프랑스 조계지에 위치한 쓰난공관은 중국 근대사의 중요한 장소로, 다양한 전시가 열립니다.</div>
+                    
+                    <img src="/assets/images/sinan.jpeg" alt="상하이 프랑스 조계지에 위치한 쓰난공관은 중국 근대사의 중요한 장소로, 다양한 전시가 열립니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">14:00</div>
+                    <div class="mui-plan-title">티엔즈팡</div>
+                    <div class="mui-plan-desc">상하이의 예술과 문화가 어우러진 거리로, 다양한 갤러리와 카페가 있습니다.</div>
+                    
+                    <img src="/assets/images/tianzifang.jpeg" alt="상하이의 예술과 문화가 어우러진 거리로, 다양한 갤러리와 카페가 있습니다." class="mui-plan-img" />
                     
                 </li>
                 
@@ -199,10 +308,25 @@
                 
                 <li class="mui-plan-item">
                     <div class="mui-plan-time">15:00</div>
-                    <div class="mui-plan-title">카페에서 휴식</div>
-                    <div class="mui-plan-desc"></div>
+                    <div class="mui-plan-title">위위엔(예원)</div>
+                    <div class="mui-plan-desc">상하이의 전통 정원으로, 중국 전통 건축과 정원의 아름다움을 느낄 수 있는 곳입니다.</div>
                     
-                    <img src="/assets/images/cafe.jpg" alt="" class="mui-plan-img" />
+                    <img src="/assets/images/yuyuan.jpeg" alt="상하이의 전통 정원으로, 중국 전통 건축과 정원의 아름다움을 느낄 수 있는 곳입니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">17:00</div>
+                    <div class="mui-plan-title">찡안스(정안사)</div>
+                    <div class="mui-plan-desc">상하이의 대표적인 불교 사찰로, 고대 중국의 건축 양식을 잘 보존하고 있습니다.</div>
+                    
+                    <img src="/assets/images/jingan.jpeg" alt="상하이의 대표적인 불교 사찰로, 고대 중국의 건축 양식을 잘 보존하고 있습니다." class="mui-plan-img" />
                     
                 </li>
                 
@@ -213,15 +337,29 @@
     
     <div id="tab-3" class="mui-tabcontent" style="display:none">
         <div class="mui-card">
-            <h3>2025-11-16 <span class="mui-tablabel">마지막 날</span></h3>
+            <h3>2025-11-16 <span class="mui-tablabel">귀국</span></h3>
             <ul class="mui-plan-list">
                 
                 <li class="mui-plan-item">
-                    <div class="mui-plan-time">10:00</div>
-                    <div class="mui-plan-title">박물관 방문</div>
+                    <div class="mui-plan-time">9:30</div>
+                    <div class="mui-plan-title">숙소 체크아웃</div>
                     <div class="mui-plan-desc"></div>
                     
-                    <img src="/assets/images/museum.jpg" alt="" class="mui-plan-img" />
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(1시간)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">13:10</div>
+                    <div class="mui-plan-title">푸동 공항 출발</div>
+                    <div class="mui-plan-desc"></div>
                     
                 </li>
                 
@@ -232,11 +370,9 @@
                 
                 
                 <li class="mui-plan-item">
-                    <div class="mui-plan-time">15:00</div>
-                    <div class="mui-plan-title">카페에서 휴식</div>
+                    <div class="mui-plan-time">16:00</div>
+                    <div class="mui-plan-title">인천 도착</div>
                     <div class="mui-plan-desc"></div>
-                    
-                    <img src="/assets/images/cafe.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
                 
