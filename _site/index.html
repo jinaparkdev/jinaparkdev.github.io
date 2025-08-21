@@ -10,7 +10,7 @@
 <body>
   <!-- 여행 계획 탭 UI: trip.yml 데이터 기반으로 동적 생성 -->
 <div class="mui-tabs-wrapper">
-    <div class="mui-title">여행계획</div>
+    <div class="mui-title">일정표</div>
     <div class="mui-tabs">
         
         <button class="mui-tablinks" onclick="openTab(event, 'tab-0')" id="defaultOpen">2025-11-13<br /><span class="mui-tablabel">첫째 날</span>
@@ -34,21 +34,110 @@
             <h3>2025-11-13 <span class="mui-tablabel">첫째 날</span></h3>
             <ul class="mui-plan-list">
                 
-                <li>
-                    <div class="mui-plan-time">09:00</div>
-                    <div class="mui-plan-desc">호텔 체크인</div>
-                    
-                    <img src="/assets/images/hotel.jpg" alt="호텔 체크인" class="mui-plan-img" />
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">12:15</div>
+                    <div class="mui-plan-title">인천 출발</div>
+                    <div class="mui-plan-desc"></div>
                     
                 </li>
                 
-                <li>
-                    <div class="mui-plan-time">12:00</div>
-                    <div class="mui-plan-desc">현지 맛집 점심</div>
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
                     
-                    <img src="/assets/images/lunch.jpg" alt="현지 맛집 점심" class="mui-plan-img" />
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">13:35</div>
+                    <div class="mui-plan-title">푸동 공항 도착</div>
+                    <div class="mui-plan-desc">현지 시간 기준</div>
                     
                 </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(1시간)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">14:35</div>
+                    <div class="mui-plan-title">북와이탄</div>
+                    <div class="mui-plan-desc"></div>
+                    
+                    <img src="/assets/images/beiwaitan.jpeg" alt="" class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(10분)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">16:00</div>
+                    <div class="mui-plan-title">록번드</div>
+                    <div class="mui-plan-desc">과거 영국 조계지로, 영국식 건축물과 현대적인 예술이 어우러진 곳입니다.</div>
+                    
+                    <img src="/assets/images/rockbund.jpeg" alt="과거 영국 조계지로, 영국식 건축물과 현대적인 예술이 어우러진 곳입니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">17:00</div>
+                    <div class="mui-plan-title">난징동루</div>
+                    <div class="mui-plan-desc">상하이의 대표적인 쇼핑 거리로, 다양한 상점과 레스토랑이 즐비합니다.</div>
+                    
+                    <img src="/assets/images/nanjingdonglu.jpeg" alt="상하이의 대표적인 쇼핑 거리로, 다양한 상점과 레스토랑이 즐비합니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">18:00</div>
+                    <div class="mui-plan-title">와이탄</div>
+                    <div class="mui-plan-desc">미국, 영국, 프랑스 등 13개국의 건축 양식이 어우러진 상하이의 대표적인 관광지입니다. 야경이 특히 아름답습니다.</div>
+                    
+                    <img src="/assets/images/waitan.jpeg" alt="미국, 영국, 프랑스 등 13개국의 건축 양식이 어우러진 상하이의 대표적인 관광지입니다. 야경이 특히 아름답습니다." class="mui-plan-img" />
+                    
+                </li>
+                
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
+                    
+                    <span class="transport-icon">🚗</span>
+                    차량(15분)
+                    
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">19:00</div>
+                    <div class="mui-plan-title">숙소 체크인</div>
+                    <div class="mui-plan-desc"></div>
+                    
+                    <img src="/assets/images/home.jpeg" alt="" class="mui-plan-img" />
+                    
+                </li>
+                
                 
             </ul>
         </div>
@@ -59,21 +148,30 @@
             <h3>2025-11-14 <span class="mui-tablabel">둘째 날</span></h3>
             <ul class="mui-plan-list">
                 
-                <li>
+                <li class="mui-plan-item">
                     <div class="mui-plan-time">10:00</div>
-                    <div class="mui-plan-desc">박물관 방문</div>
+                    <div class="mui-plan-title">박물관 방문</div>
+                    <div class="mui-plan-desc"></div>
                     
-                    <img src="/assets/images/museum.jpg" alt="박물관 방문" class="mui-plan-img" />
+                    <img src="/assets/images/museum.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
                 
-                <li>
-                    <div class="mui-plan-time">15:00</div>
-                    <div class="mui-plan-desc">카페에서 휴식</div>
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
                     
-                    <img src="/assets/images/cafe.jpg" alt="카페에서 휴식" class="mui-plan-img" />
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">15:00</div>
+                    <div class="mui-plan-title">카페에서 휴식</div>
+                    <div class="mui-plan-desc"></div>
+                    
+                    <img src="/assets/images/cafe.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
+                
                 
             </ul>
         </div>
@@ -84,21 +182,30 @@
             <h3>2025-11-15 <span class="mui-tablabel">셋째 날</span></h3>
             <ul class="mui-plan-list">
                 
-                <li>
+                <li class="mui-plan-item">
                     <div class="mui-plan-time">10:00</div>
-                    <div class="mui-plan-desc">박물관 방문</div>
+                    <div class="mui-plan-title">박물관 방문</div>
+                    <div class="mui-plan-desc"></div>
                     
-                    <img src="/assets/images/museum.jpg" alt="박물관 방문" class="mui-plan-img" />
+                    <img src="/assets/images/museum.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
                 
-                <li>
-                    <div class="mui-plan-time">15:00</div>
-                    <div class="mui-plan-desc">카페에서 휴식</div>
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
                     
-                    <img src="/assets/images/cafe.jpg" alt="카페에서 휴식" class="mui-plan-img" />
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">15:00</div>
+                    <div class="mui-plan-title">카페에서 휴식</div>
+                    <div class="mui-plan-desc"></div>
+                    
+                    <img src="/assets/images/cafe.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
+                
                 
             </ul>
         </div>
@@ -109,21 +216,30 @@
             <h3>2025-11-16 <span class="mui-tablabel">마지막 날</span></h3>
             <ul class="mui-plan-list">
                 
-                <li>
+                <li class="mui-plan-item">
                     <div class="mui-plan-time">10:00</div>
-                    <div class="mui-plan-desc">박물관 방문</div>
+                    <div class="mui-plan-title">박물관 방문</div>
+                    <div class="mui-plan-desc"></div>
                     
-                    <img src="/assets/images/museum.jpg" alt="박물관 방문" class="mui-plan-img" />
+                    <img src="/assets/images/museum.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
                 
-                <li>
-                    <div class="mui-plan-time">15:00</div>
-                    <div class="mui-plan-desc">카페에서 휴식</div>
+                <div class="transport-info-side">
+                    <span class="transport-divider"></span>
                     
-                    <img src="/assets/images/cafe.jpg" alt="카페에서 휴식" class="mui-plan-img" />
+                </div>
+                
+                
+                <li class="mui-plan-item">
+                    <div class="mui-plan-time">15:00</div>
+                    <div class="mui-plan-title">카페에서 휴식</div>
+                    <div class="mui-plan-desc"></div>
+                    
+                    <img src="/assets/images/cafe.jpg" alt="" class="mui-plan-img" />
                     
                 </li>
+                
                 
             </ul>
         </div>
@@ -169,7 +285,9 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 10;
         overflow-x: auto;
         background: #fff;
         border-radius: 12px 12px 0 0;
@@ -271,9 +389,15 @@
         margin-bottom: 4px;
     }
 
+    .mui-plan-title {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 6px;
+    }
+
     .mui-plan-desc {
         font-size: 1.08em;
-        color: #333;
+        color: #595858;
         margin-bottom: 6px;
     }
 
@@ -283,6 +407,28 @@
         border-radius: 8px;
         margin-top: 4px;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .transport-info-side {
+        font-size: 0.98em;
+        color: #1976d2;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        white-space: nowrap;
+    }
+
+    .transport-divider {
+        flex: 1;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 0 8px;
+    }
+
+    .transport-icon {
+        font-size: 1.1em;
+        margin-right: 2px;
     }
 
     @media (max-width: 600px) {
@@ -299,6 +445,7 @@
         .mui-tabs {
             border-radius: 0;
             padding: 0 1px;
+            top: 0;
         }
 
         .mui-tablinks {
@@ -308,6 +455,10 @@
 
         .mui-card {
             padding: 18px 12px 12px 12px;
+        }
+
+        .transport-info-side {
+            font-size: 0.92em;
         }
     }
 
@@ -330,6 +481,20 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
         moveMuiTabIndicator();
+        centerTabInView(evt.currentTarget);
+    }
+
+    // 탭을 탭바 중앙에 오도록 스크롤
+    function centerTabInView(tabBtn) {
+        var tabsBar = tabBtn.parentElement;
+        var tabRect = tabBtn.getBoundingClientRect();
+        var barRect = tabsBar.getBoundingClientRect();
+        var scrollLeft = tabsBar.scrollLeft;
+        var offset = (tabRect.left + tabRect.right) / 2 - (barRect.left + barRect.right) / 2;
+        tabsBar.scrollTo({
+            left: scrollLeft + offset,
+            behavior: 'smooth'
+        });
     }
 
     function moveMuiTabIndicator() {

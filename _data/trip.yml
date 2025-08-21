@@ -1,36 +1,56 @@
 - date: 2025-11-13
   title: 첫째 날
   plans:
-    - time: "09:00"
-      desc: "호텔 체크인"
-      img: "/assets/images/hotel.jpg"
-    - time: "12:00"
-      desc: "현지 맛집 점심"
-      img: "/assets/images/lunch.jpg"
+    - time: "12:15"
+      title: "인천 출발"
+    - time: "13:35"
+      title: "푸동 공항 도착"
+      desc: "현지 시간 기준"
+      transport: "차량(1시간)"
+    - time: "14:35"
+      title: "북와이탄"
+      img: "/assets/images/beiwaitan.jpeg"
+      transport: "차량(10분)"
+    - time: "16:00"
+      title: "록번드"
+      desc: "과거 영국 조계지로, 영국식 건축물과 현대적인 예술이 어우러진 곳입니다."
+      img: "/assets/images/rockbund.jpeg"
+    - time: "17:00"
+      title: "난징동루"
+      desc: "상하이의 대표적인 쇼핑 거리로, 다양한 상점과 레스토랑이 즐비합니다."
+      img: "/assets/images/nanjingdonglu.jpeg"
+    - time: "18:00"
+      title: "와이탄"
+      desc: "미국, 영국, 프랑스 등 13개국의 건축 양식이 어우러진 상하이의 대표적인 관광지입니다. 야경이 특히 아름답습니다."
+      img: "/assets/images/waitan.jpeg"
+      transport: "차량(15분)"
+    - time: "19:00"
+      title: "숙소 체크인"
+      img: "/assets/images/home.jpeg"
 - date: 2025-11-14
   title: 둘째 날
   plans:
     - time: "10:00"
-      desc: "박물관 방문"
+      title: "박물관 방문"
       img: "/assets/images/museum.jpg"
     - time: "15:00"
-      desc: "카페에서 휴식"
+      title: "카페에서 휴식"
       img: "/assets/images/cafe.jpg"
 - date: 2025-11-15
   title: 셋째 날
   plans:
     - time: "10:00"
-      desc: "박물관 방문"
+      title: "박물관 방문"
       img: "/assets/images/museum.jpg"
     - time: "15:00"
-      desc: "카페에서 휴식"
+      title: "카페에서 휴식"
       img: "/assets/images/cafe.jpg"
 - date: 2025-11-16
   title: 마지막 날
   plans:
     - time: "10:00"
-      desc: "박물관 방문"
+      title: "박물관 방문"
       img: "/assets/images/museum.jpg"
     - time: "15:00"
-      desc: "카페에서 휴식"
+      title: "카페에서 휴식"
       img: "/assets/images/cafe.jpg"
