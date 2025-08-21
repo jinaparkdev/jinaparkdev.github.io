@@ -19,10 +19,10 @@
                 <li class="mui-plan-item">
                     <div class="mui-plan-time">{{ plan.time }}</div>
                     <div class="mui-plan-title">{{ plan.title }}</div>
-                    <div class="mui-plan-desc">{{ plan.desc }}</div>
                     {% if plan.img %}
-                    <img src="{{ plan.img }}" alt="{{ plan.desc }}" class="mui-plan-img">
+                    <img src="{{ plan.img }}" alt="{{ plan.title }}" class="mui-plan-img">
                     {% endif %}
+                    <div class="mui-plan-desc">{{ plan.desc | newline_to_br }}</div>
                 </li>
                 {% unless forloop.last %}
                 <div class="transport-info-side">
@@ -184,6 +184,7 @@
 
     .mui-plan-title {
         font-size: 1.2em;
+        font-weight: 600;
         color: #333;
         margin-bottom: 6px;
     }
@@ -191,7 +192,7 @@
     .mui-plan-desc {
         font-size: 1.08em;
         color: #595858;
-        margin-bottom: 6px;
+        margin-top: 6px;
     }
 
     .mui-plan-img {
@@ -274,6 +275,7 @@
         evt.currentTarget.className += " active";
         moveMuiTabIndicator();
         centerTabInView(evt.currentTarget);
+        window.scrollTo({top: 0, behavior: 'smooth'}); // 탭 클릭 시 스크롤 최상단 이동
     }
 
     // 탭을 탭바 중앙에 오도록 스크롤
